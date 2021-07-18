@@ -28,7 +28,7 @@ riff1c = riff1a[:4] + [
     {5: 4}
 ]
 
-riff1 = riff1a + line + riff1b + line + riff1a + line + riff1c + newline
+riff1 = [{-1: '\nRiff 1\n'}] + riff1a + line + riff1b + line + riff1a + line + riff1c + line
 
 riff2a = [
     {6: 0, 5: 0},
@@ -57,7 +57,7 @@ riff2c = riff2a[:9] + [
     {5: 5}
 ]
 
-riff2 = riff2a + line + riff2b + line + riff2a + line + riff2c + newline
+riff2 = [{-1: '\nRiff 2\n'}] + riff2a + line + riff2b + line + riff2a + line + riff2c + line
 
 riff3a = [
     {6: 5, 5: 5, 4: 5},
@@ -77,5 +77,5 @@ riff3b = riff3a[:6] + [
     {6: 3, 5: 3},
 ]
 
-riff3 = riff3a + line + riff3b + line
+riff3 = [{-1: '\nRiff 3\n'}] + riff3a + line + riff3b + line
 
