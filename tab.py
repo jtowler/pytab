@@ -1,3 +1,6 @@
+line = [{6: 'l'}]
+newline = line + [{6: 'N'}]
+
 riff1a = [
     {6: 0},
     {5: '3h5'},
@@ -25,7 +28,7 @@ riff1c = riff1a[:4] + [
     {5: 4}
 ]
 
-riff1 = riff1a + [{6: 'l'}] + riff1b + [{6: 'l'}] + riff1a + [{6: 'l'}] + riff1c
+riff1 = riff1a + line + riff1b + line + riff1a + line + riff1c + newline
 
 riff2a = [
     {6: 0, 5: 0},
@@ -54,7 +57,7 @@ riff2c = riff2a[:9] + [
     {5: 5}
 ]
 
-riff2 = riff2a + [{6: 'l'}] + riff2b + [{6: 'l'}] + riff2a + [{6: 'l'}] + riff2c
+riff2 = riff2a + line + riff2b + line + riff2a + line + riff2c + newline
 
 riff3a = [
     {6: 5, 5: 5, 4: 5},
@@ -74,4 +77,5 @@ riff3b = riff3a[:6] + [
     {6: 3, 5: 3},
 ]
 
-riff3 = riff3a + [{6: 'l'}] + riff3b
+riff3 = riff3a + line + riff3b + line
+
