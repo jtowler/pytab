@@ -62,8 +62,7 @@ def display(stave: list) -> None:
 
 
 if __name__ == '__main__':
-    full_tab = tab.riff1 + tab.riff2 + tab.riff3
-    full_tab_checker(full_tab)
-    tabs = read_tab_list(full_tab)
+    full_tab_checker(tab.full_tab)
+    tabs = read_tab_list(tab.full_tab)
     formatted_tabs = format_tab(tabs)
     display(formatted_tabs)
